@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>40</y>
+      <w>290</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Intnode
+--
+-nodeData : int
+-nodePointer : Intnode *
+
+--
++ getNodeData() : int
++ getNodePointer() : IntNode*
++ setNodeData(int) : void
++ setnodePointer(IntNode*) : void
+
++ IntNode() : constructor
++ IntNode(int) : constructor
++ Intnode(int, IntNode*) : constructor
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
