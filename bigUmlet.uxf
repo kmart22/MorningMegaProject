@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>780</x>
-      <y>40</y>
+      <x>110</x>
+      <y>50</y>
       <w>290</w>
       <h>220</h>
     </coordinates>
@@ -25,6 +25,26 @@
 + Intnode(int, IntNode*) : constructor
 
 bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>80</y>
+      <w>220</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>IntNodeArray
+-
+- head : IntNode*
+- size : int
+-
++ IntNodeArray(int) : constructor
++ getSize() : int
++ getFromIndex(int) : int
++ setAtIndex(int, int value) : void
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
