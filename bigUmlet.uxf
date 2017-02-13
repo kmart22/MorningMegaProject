@@ -32,8 +32,8 @@ bg=orange</panel_attributes>
     <coordinates>
       <x>490</x>
       <y>80</y>
-      <w>220</w>
-      <h>160</h>
+      <w>270</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>IntNodeArray
 -
