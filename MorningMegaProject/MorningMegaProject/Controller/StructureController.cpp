@@ -13,7 +13,8 @@ using namespace std;
 
 StructureController :: StructureController()
 {
-    
+    wordNode = Node<string>();
+    numberNode = Node<int>();
 }
 
 void StructureController :: testIntArray()

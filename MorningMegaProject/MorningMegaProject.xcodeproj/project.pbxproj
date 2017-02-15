@@ -11,6 +11,7 @@
 		218651BB1E4B7D5500B0FA54 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 218651BA1E4B7D5500B0FA54 /* Runner.cpp */; };
 		218651BF1E4B7DF600B0FA54 /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 218651BD1E4B7DF600B0FA54 /* StructureController.cpp */; };
 		21D10C8A1E48D677008E8168 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D10C881E48D677008E8168 /* IntNode.cpp */; };
+		21F8A48A1E54B25400181BF1 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21F8A4881E54B25400181BF1 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,9 @@
 		21D10C881E48D677008E8168 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = ../../Controller/IntNode.cpp; sourceTree = "<group>"; };
 		21D10C891E48D677008E8168 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = ../../Controller/IntNode.hpp; sourceTree = "<group>"; };
 		21E1CF841E5209CC0000AE51 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		21F8A4871E54AAF900181BF1 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
+		21F8A4881E54B25400181BF1 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
+		21F8A4891E54B25400181BF1 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +55,14 @@
 		218651B61E4B724C00B0FA54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21F8A4881E54B25400181BF1 /* Timer.cpp */,
+				21F8A4891E54B25400181BF1 /* Timer.hpp */,
 				21D10C891E48D677008E8168 /* IntNode.hpp */,
 				21D10C881E48D677008E8168 /* IntNode.cpp */,
 				218651B71E4B730400B0FA54 /* IntNodeArray.cpp */,
 				218651B81E4B730400B0FA54 /* IntNodeArray.hpp */,
 				21E1CF841E5209CC0000AE51 /* Node.hpp */,
+				21F8A4871E54AAF900181BF1 /* Array.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 				218651BB1E4B7D5500B0FA54 /* Runner.cpp in Sources */,
 				218651BF1E4B7DF600B0FA54 /* StructureController.cpp in Sources */,
 				21D10C8A1E48D677008E8168 /* IntNode.cpp in Sources */,
+				21F8A48A1E54B25400181BF1 /* Timer.cpp in Sources */,
 				218651B91E4B730400B0FA54 /* IntNodeArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
