@@ -55,14 +55,11 @@
 		218651B61E4B724C00B0FA54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				21F8A4881E54B25400181BF1 /* Timer.cpp */,
-				21F8A4891E54B25400181BF1 /* Timer.hpp */,
-				21D10C891E48D677008E8168 /* IntNode.hpp */,
-				21D10C881E48D677008E8168 /* IntNode.cpp */,
-				218651B71E4B730400B0FA54 /* IntNodeArray.cpp */,
-				218651B81E4B730400B0FA54 /* IntNodeArray.hpp */,
 				21E1CF841E5209CC0000AE51 /* Node.hpp */,
 				21F8A4871E54AAF900181BF1 /* Array.hpp */,
+				21F8A4881E54B25400181BF1 /* Timer.cpp */,
+				21F8A4891E54B25400181BF1 /* Timer.hpp */,
+				21EFB73F1E5C8DCC00DE9B1B /* Typed Data Sample */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -96,10 +93,29 @@
 		21D10C801E48D656008E8168 /* MorningMegaProject */ = {
 			isa = PBXGroup;
 			children = (
+				21EFB7401E5C8E1000DE9B1B /* Resources */,
 				218651B61E4B724C00B0FA54 /* Model */,
 				218651BC1E4B7DC900B0FA54 /* Controller */,
 			);
 			path = MorningMegaProject;
+			sourceTree = "<group>";
+		};
+		21EFB73F1E5C8DCC00DE9B1B /* Typed Data Sample */ = {
+			isa = PBXGroup;
+			children = (
+				218651B81E4B730400B0FA54 /* IntNodeArray.hpp */,
+				218651B71E4B730400B0FA54 /* IntNodeArray.cpp */,
+				21D10C881E48D677008E8168 /* IntNode.cpp */,
+				21D10C891E48D677008E8168 /* IntNode.hpp */,
+			);
+			name = "Typed Data Sample";
+			sourceTree = "<group>";
+		};
+		21EFB7401E5C8E1000DE9B1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

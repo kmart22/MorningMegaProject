@@ -21,8 +21,22 @@ private:
     int size;
 
 public:
+    //constructor
+    Array<Type>();
     Array<Type>(int size);
-    int getSize();
+    
+    //deconstructor
+    ~Array<Type>();
+    
+    //copy constructor
+    Array<Type>(const Array<Type> & toBeCopied);
+    
+    //Assignment Operator overload
+    void operator = (const Array<Type> & toBeAssigned);
+    
+    //methods
+    int getSize() const;
+    Node<Type> * getFront() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
     
@@ -45,6 +59,13 @@ Array<Type> :: Array()
 
     }
 }
+
+template <class Type>
+Node<Type<* Array<Type> :: getFront() const
+{
+    return front;
+}
+
 
 template <class Type>
 type Array<Type> :: getFromIndex(int index)
@@ -77,8 +98,20 @@ void Array<Type> :: setAtIndex(int index, Type value)
     
 }
 
-template <class Type> 
 
+template <class Type>
+int Array<Type> :: getSize() const
+{
+    return size;
+}
+
+template <class Type> 
+Array<Type> :: Array()
+{
+    //DO NOT USE!!!
+    
+    
+}
 
 
 #endif /* IntNodeArray_h */
