@@ -41,3 +41,31 @@ void StructureController :: start()
     testIntArray();
     cout << "finished IntArrayNodeTestiong" << endl;
 }
+
+void StructureController :: start()
+{
+    cout << "going to test the Array Template" << endl;
+    testAdvancedFeatures();
+    cout << "finished template testing" << endl;
+}
+
+void StructureController :: testAdvancedFeatures()
+{
+    int showDestructure = 0;
+    
+    if(showDestructure <1)
+    {
+        Array<string> words = Array<string>(5);
+        cout << "there should be messages about destructor next" << endl;
+    }
+    
+    Array<string> words = Array<string>(4);
+    words.setAtIndex(0, "at zero");
+    words.setAtIndex(3, "in the last spot");
+    Array<string> copiedWords = Array<string>(words);
+    
+    cout << "these should match:" << endl;
+    cout << words.getFromIndex(0) << " sjould be the same as " << copiedWords.getFromIndex(0) << endl;
+    
+    copiedwords.setAtIndex(3, "Changed the contents of the copied array");
+}

@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>380</x>
-      <y>50</y>
+      <y>0</y>
       <w>290</w>
       <h>220</h>
     </coordinates>
@@ -31,7 +31,7 @@ bg=orange</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>50</x>
-      <y>50</y>
+      <y>0</y>
       <w>270</w>
       <h>170</h>
     </coordinates>
@@ -51,7 +51,7 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>60</x>
-      <y>310</y>
+      <y>260</y>
       <w>240</w>
       <h>180</h>
     </coordinates>
@@ -66,7 +66,7 @@ bg=green</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>310</x>
-      <y>150</y>
+      <y>100</y>
       <w>90</w>
       <h>30</h>
     </coordinates>
@@ -77,7 +77,7 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>390</x>
-      <y>300</y>
+      <y>250</y>
       <w>480</w>
       <h>280</h>
     </coordinates>
@@ -105,11 +105,39 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>290</x>
-      <y>330</y>
+      <y>280</y>
       <w>120</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>580</y>
+      <w>390</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Model :: List&lt;Type&gt;
+--
+- size : int
+- front : Node&lt;Type&gt;*
+
+--
++List&lt;Type&gt;() : constructor
++List&lt;Type&gt;(sonst List&lt;Type&gt; &amp; source) : copy constructor
++ ~List&lt;Type&gt;() : deconstructor
+
++ addAtIndex(int index, Type value) : void
++ add(Type value : void
++ remove(int index) : Type
++ setAtIndex(int index, Type data) : Type
++ getFromIndex(int index) : Type
++ contains(Type data) : bool
++ getSize() const : int
++ getFront() const : node&lt;Type&gt; *</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

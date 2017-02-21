@@ -36,6 +36,7 @@
 		21D10C881E48D677008E8168 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = ../../Controller/IntNode.cpp; sourceTree = "<group>"; };
 		21D10C891E48D677008E8168 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = ../../Controller/IntNode.hpp; sourceTree = "<group>"; };
 		21E1CF841E5209CC0000AE51 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		21EFB7411E5CA3A000DE9B1B /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
 		21F8A4871E54AAF900181BF1 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		21F8A4881E54B25400181BF1 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		21F8A4891E54B25400181BF1 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		218651B61E4B724C00B0FA54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21EFB7411E5CA3A000DE9B1B /* List.hpp */,
 				21E1CF841E5209CC0000AE51 /* Node.hpp */,
 				21F8A4871E54AAF900181BF1 /* Array.hpp */,
 				21F8A4881E54B25400181BF1 /* Timer.cpp */,
