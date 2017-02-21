@@ -105,6 +105,57 @@ int Array<Type> :: getSize() const
     return size;
 }
 
+
+template <class Type>
+Array<Type> :: ~Array()
+{
+    int count = size;
+    Node<Type> * remove = front;
+    while(front != nullptr)
+    {
+        //move to next node in array
+        front = front->getNodePointer();
+        cout << "Moving to the next node. At: " << count << endl;
+        //delete the front ponter
+        delete remove;
+        cout << "deleting the old front pointer." << endl;
+        //move delete to new front
+        remove = front;
+        cout << "moving to new pointer." << endl;
+        count--;
+        cout << "front is at: " << front << " count is: " << count << endl;
+        
+    }
+}
+
+
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toBeCopied)
+{
+    this->size = toBeCopied.getSize();
+    
+    //Build data Structure
+    this->front = new Node<Type>();
+    for(int index = 1; index < size; index++)
+    {
+        Node<type> * temp = new Node<Type>();
+        temp->setNodePointer(front);
+        front = temp;
+    }
+    
+    Node<Type> * copyTemp = toBeCopied.getFront();
+    Node<Type> * updated = this->front;
+    for(int index = 0; index < size; index++)
+    {
+        updated->setNodeData(copyTemp->getNodeData());
+        updated = updated->getNodePointer():
+        copyTemp = copyTemp->getNodePointer();
+    }
+}
+
+
+
+
 template <class Type> 
 Array<Type> :: Array()
 {
