@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>10</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
+      <x>385</x>
       <y>0</y>
-      <w>290</w>
-      <h>220</h>
+      <w>203</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>Intnode
 --
@@ -30,10 +30,10 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
+      <x>154</x>
       <y>0</y>
-      <w>270</w>
-      <h>170</h>
+      <w>189</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>IntNodeArray
 -
@@ -50,10 +50,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
-      <y>260</y>
-      <w>240</w>
-      <h>180</h>
+      <x>161</x>
+      <y>182</y>
+      <w>168</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Node&lt;Type&gt;
 -
@@ -65,10 +65,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
-      <y>100</y>
-      <w>90</w>
-      <h>30</h>
+      <x>336</x>
+      <y>70</y>
+      <w>63</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
@@ -76,10 +76,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>250</y>
-      <w>480</w>
-      <h>280</h>
+      <x>392</x>
+      <y>175</y>
+      <w>336</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 --
@@ -104,21 +104,23 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
-      <y>280</y>
-      <w>120</w>
-      <h>30</h>
+      <x>322</x>
+      <y>196</y>
+      <w>84</w>
+      <h>28</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=1..n
+bg=black</panel_attributes>
     <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>580</y>
-      <w>390</w>
-      <h>220</h>
+      <x>392</x>
+      <y>406</y>
+      <w>322</w>
+      <h>217</h>
     </coordinates>
     <panel_attributes>Model :: List&lt;Type&gt;
 --
@@ -137,7 +139,22 @@ bg=blue</panel_attributes>
 + getFromIndex(int index) : Type
 + contains(Type data) : bool
 + getSize() const : int
-+ getFront() const : node&lt;Type&gt; *</panel_attributes>
++ getFront() const : node&lt;Type&gt; *
++ getEnd() const : Node&lt;Type&gt; *
+bg=red</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>301</y>
+      <w>266</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..n
+bg=black</panel_attributes>
+    <additional_attributes>360.0;150.0;360.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
