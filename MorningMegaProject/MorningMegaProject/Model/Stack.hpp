@@ -52,7 +52,7 @@ void Stack<Type> :: push(Type addedThing)
     }
     else
     {
-        this->end->setNextPointer(addToStack);
+        this->end->setnextPointer(addToStack);
         addToStack->setPreviousPointer(this->end);
     }
     this->end = addToStack;

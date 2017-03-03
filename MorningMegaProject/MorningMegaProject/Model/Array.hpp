@@ -54,7 +54,7 @@ Array<Type> :: Array()
     for(int index = 1; index < size; index++)
     {
         Node<Type> * currentNode = new Node<type>();
-        currentNode->setNodePointer(front);
+        currentNode->setnextPointer(front);
         front = currentNode;
 
     }
@@ -77,7 +77,7 @@ type Array<Type> :: getFromIndex(int index)
     
     for(int position = 0; position < index; position++)
     {
-        current = current->getNodePointer();
+        current = current->getnextPointer();
     }
     
     value = current->getNodeData();
@@ -91,7 +91,7 @@ void Array<Type> :: setAtIndex(int index, Type value)
     Node<Type> * current = front;
     for(int position = 0; position < index; position++)
     {
-        current = current->getNodePointer();
+        current = current->getnextPointer();
     }
     
     current->setNodeData(value);
@@ -114,7 +114,7 @@ Array<Type> :: ~Array()
     while(front != nullptr)
     {
         //move to next node in array
-        front = front->getNodePointer();
+        front = front->getnextPointer();
         cout << "Moving to the next node. At: " << count << endl;
         //delete the front ponter
         delete remove;
@@ -139,7 +139,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     for(int index = 1; index < size; index++)
     {
         Node<type> * temp = new Node<Type>();
-        temp->setNodePointer(front);
+        temp->setnextPointer(front);
         front = temp;
     }
     
@@ -148,8 +148,8 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     for(int index = 0; index < size; index++)
     {
         updated->setNodeData(copyTemp->getNodeData());
-        updated = updated->getNodePointer():
-        copyTemp = copyTemp->getNodePointer();
+        updated = updated->getnextPointer():
+        copyTemp = copyTemp->getnextPointer();
     }
 }
 

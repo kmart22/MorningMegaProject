@@ -67,7 +67,7 @@ void List<Type> :: addFront(Type value)
     {
        // Node<Type> * newFirst = new Node<type>();
        // newFirst->setNodeData(value);
-        newFirst->setNodePointer(front);
+        newFirst->setnextPointer(front);
         //or
         //Node<Type> * newFirst = new Node<type>(value, front);
         front = newFirst;
@@ -88,7 +88,7 @@ void List<Type> :: addEnd(Type data)
     }
     else
     {
-        end->setNodePointer(added);
+        end->setnextPointer(added);
         this->end = added;
     }
     size++;
@@ -119,11 +119,11 @@ void List<Type> :: addAtIndex(int index, Type value)
         for(int position = 0; position < index; position++)
         {
             previous = current;
-            current = current->getNodePointer();
+            current = current->getnextPointer();
         }
         
-        previous->setNodePointer(insertedNode);
-        insertedNode->setNodePointer(current);
+        previous->setnextPointer(insertedNode);
+        insertedNode->setnextPointer(current);
         
         size++;
     }
@@ -144,18 +144,18 @@ Type List<Type> :: remove(int index)
     if(index==0)
     {
         toBeRemoved = front;
-        front = front->getNodePointer();
+        front = front->getnextPointer();
     }
     else if(index == size -1)
     {
         for(int spot = 0; spot < index; spot++)
         {
             previous = current;
-            current = current->getNodePointer();
+            current = current->getnextPointer();
         }
         
         toBeRemoved = current;
-        previous->setNodePointer(nullptr);
+        previous->setnextPointer(nullptr);
         this->end = previous;
         
     }
@@ -164,12 +164,12 @@ Type List<Type> :: remove(int index)
         for(int spot = 0; spot < index; spot++)
         {
             previous = current;
-            current = current->getNodePointer();
+            current = current->getnextPointer();
         }
         
         toBeRemoved = current;
-        current = toBeRemoved->getNodePointer();
-        previous->setNodePointer(current);
+        current = toBeRemoved->getnextPointer();
+        previous->setnextPointer(current);
 
     }
     removed = toBeRemoved->getNodeData();
