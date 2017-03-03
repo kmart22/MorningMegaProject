@@ -16,7 +16,12 @@ private:
     
 public:
     stack();
+    ~stack();
     void add(Type value);
+    Type remove(int index);
+    Type pop();
+    Type Peek();
+    Type push(Type data);
 };
 
 /*

@@ -27,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21321E911E69C95D007AFC9C /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
+		21321E931E69C987007AFC9C /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
+		21321E941E69C99F007AFC9C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
 		2137745E1E648D2200BD8CB6 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		213DE3031E6728D40083B2F1 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		213DE3041E672E700083B2F1 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
@@ -56,17 +59,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21321E901E69C907007AFC9C /* Inherits From DoublyLinked */ = {
+			isa = PBXGroup;
+			children = (
+				21321E911E69C95D007AFC9C /* DoubleList.hpp */,
+				213DE3041E672E700083B2F1 /* Stack.hpp */,
+				21321E931E69C987007AFC9C /* CircularList.hpp */,
+				21321E941E69C99F007AFC9C /* Queue.hpp */,
+			);
+			name = "Inherits From DoublyLinked";
+			sourceTree = "<group>";
+		};
 		218651B61E4B724C00B0FA54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2137745E1E648D2200BD8CB6 /* BiDirectionalNode.hpp */,
-				21EFB7411E5CA3A000DE9B1B /* List.hpp */,
-				21E1CF841E5209CC0000AE51 /* Node.hpp */,
-				21F8A4871E54AAF900181BF1 /* Array.hpp */,
-				21F8A4881E54B25400181BF1 /* Timer.cpp */,
-				21F8A4891E54B25400181BF1 /* Timer.hpp */,
-				213DE3041E672E700083B2F1 /* Stack.hpp */,
-				213DE3031E6728D40083B2F1 /* DoublyLinkedList.hpp */,
 				21EFB73F1E5C8DCC00DE9B1B /* Typed Data Sample */,
 			);
 			name = Model;
@@ -111,10 +117,18 @@
 		21EFB73F1E5C8DCC00DE9B1B /* Typed Data Sample */ = {
 			isa = PBXGroup;
 			children = (
+				213DE3031E6728D40083B2F1 /* DoublyLinkedList.hpp */,
+				21F8A4871E54AAF900181BF1 /* Array.hpp */,
+				2137745E1E648D2200BD8CB6 /* BiDirectionalNode.hpp */,
+				21EFB7411E5CA3A000DE9B1B /* List.hpp */,
+				21F8A4891E54B25400181BF1 /* Timer.hpp */,
+				21F8A4881E54B25400181BF1 /* Timer.cpp */,
+				21E1CF841E5209CC0000AE51 /* Node.hpp */,
 				218651B81E4B730400B0FA54 /* IntNodeArray.hpp */,
 				218651B71E4B730400B0FA54 /* IntNodeArray.cpp */,
 				21D10C881E48D677008E8168 /* IntNode.cpp */,
 				21D10C891E48D677008E8168 /* IntNode.hpp */,
+				21321E901E69C907007AFC9C /* Inherits From DoublyLinked */,
 			);
 			name = "Typed Data Sample";
 			sourceTree = "<group>";
