@@ -24,8 +24,37 @@ public:
     Type push(Type data);
 };
 
+template <class Type>
+Stack<Type> :: Stack() : DoublyLinkedList<Type>()
+{
+    
+}
+
+
+
+
+/*
+ same destructor as Queue
+*/
+template <class Type>
+Stack<Type> :: ~Stack()
+{
+    BiDirectionalNode<Type> * remove = this->getFront();
+    While(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer());
+        delete remove;
+        remove = this->getFront();
+    }
+
+}
+
+
+
+
 /*
  the add method onlt adds to the end on a stack. never at an index
+ implemented onlt to avoid abstract
  
 */
 template <class Type>
@@ -34,31 +63,91 @@ void Stack<Type> :: add(Type valueToAdd)
     push(Type valueToAdd);
 }
 
+
+
+
 /*
- adds the supplied object to the stack to the end.
- set new object to point to end.
- Increases the size by one.
- Adjusts the end pointer to reflect the new end of the stack.
+ 1. creates a new node
+ 2. if the sack is empty sets front to the new node
+ 3. Else sets the end's next to point to the new node and the new nodes previous to end.
+ 4. move end to the new node.
+ 5. Increase the size by 1.
  */
 template <class Type>
 void Stack<Type> :: push(Type addedThing)
 {
     BiDirectionalNode<Type> * addToStack = new BiDirectionalNode(addedThing);
     
-    if(this->size == 0 || this->front == nullptr || this->end == nullptr)
+    if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {
-        this->front = addToStack;
+        this->setFront(addToStack);
         
     }
     else
     {
-        this->end->setnextPointer(addToStack);
-        addToStack->setPreviousPointer(this->end);
+        this->getEnd()->setnextPointer(addToStack);
+        addToStack->setPreviousPointer(this->getEnd());
     }
-    this->end = addToStack;
-    this->size++;
+    this->setEnd(addToStack);
+    this->setSize(this->getSize() + 1);
     
 
 }
 
+
+
+
+/*
+ Used to avoid abstract status.
+ Asserts that the size is correct and calls the pop method.
+*/
+template <class Type>
+Type Stack<Type> :: remove(int index)
+{
+    assert(index == this-getSize() - 1 && this->getSize() > 0);
+    return pop();
+}
+
+
+
+
+template <class Type>
+Type Stack<Type> :: peek()
+{
+    assert(this->getSize() >0);
+    return this->end->getNodeData();
+}
+
+
+
+
+/*
+ 1. Assert size > 0.
+ 2. get data from end node.
+ 3. Move to ends previous
+ 4. Delete old end node.
+ 5. Decrease size.
+ 6. Return data from old end.
+ */
+template <class Type>
+Type Stack<Type> :: pop()
+{
+    assert(this->getSize() > 0);
+    Type removed = this->getEnd()->getNodeData();
+    
+    BiDirectionalNode<Type< * update = this->getEnd();
+    update = update->getPreviousPointer();
+    
+    if(update != nullptr)
+    {
+        update->setnextpointer(nullptr);
+    }
+    delete this->getEnd();
+    
+    this->setEnd(update);
+    
+    this->setSize(this->getSize() - 1);
+    
+    return removed;
+}
 #endif /* Stack_h */
