@@ -37,7 +37,7 @@ DoublyLinkedList<Type> :: DoublyLinkedList()
     this->end = nullptr;
 }
 
-template <class Type.
+template <class Type>
 DoublyLinkedList<Type> :: getSize()
 {
     return this-size;

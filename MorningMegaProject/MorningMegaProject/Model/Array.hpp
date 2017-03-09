@@ -6,8 +6,8 @@
 //  Copyright © 2017 CTEC. All rights reserved.
 //
 
-#ifndef Array.hpp
-#define Array.hpp
+#ifndef Array_hpp
+#define Array_hpp
 
 #include <assert.h>
 #include "Node.hpp"
@@ -44,8 +44,18 @@ public:
 
 //Implementation section
 
+#include <iostream>
+
+using namespace std;
+
 template <class Type>
 Array<Type> :: Array()
+{
+    //DO NOT USE!!!
+}
+
+template <class Type>
+Array<Type> :: Array(int size)
 {
     assert(size > 0);
     this->size = size;
@@ -53,7 +63,7 @@ Array<Type> :: Array()
     this->front = new Node<Type>();
     for(int index = 1; index < size; index++)
     {
-        Node<Type> * currentNode = new Node<type>();
+        Node<Type> * currentNode = new Node<Type>();
         currentNode->setnextPointer(front);
         front = currentNode;
 
@@ -61,14 +71,14 @@ Array<Type> :: Array()
 }
 
 template <class Type>
-Node<Type<* Array<Type> :: getFront() const
+Node<Type> * Array<Type> :: getFront() const
 {
     return front;
 }
 
 
 template <class Type>
-type Array<Type> :: getFromIndex(int index)
+Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >=0 && index < size);
     Type value;
@@ -138,7 +148,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     this->front = new Node<Type>();
     for(int index = 1; index < size; index++)
     {
-        Node<type> * temp = new Node<Type>();
+        Node<Type> * temp = new Node<Type>();
         temp->setnextPointer(front);
         front = temp;
     }
@@ -148,7 +158,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     for(int index = 0; index < size; index++)
     {
         updated->setNodeData(copyTemp->getNodeData());
-        updated = updated->getnextPointer():
+        updated = updated->getnextPointer();
         copyTemp = copyTemp->getnextPointer();
     }
 }
@@ -156,13 +166,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
 
 
 
-template <class Type> 
-Array<Type> :: Array()
-{
-    //DO NOT USE!!!
-    
-    
-}
+
 
 
 #endif /* IntNodeArray_h */
