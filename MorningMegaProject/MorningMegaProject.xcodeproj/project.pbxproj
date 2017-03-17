@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217A273B1E76DAAE00FA7C8E /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 217A27391E76DAAE00FA7C8E /* Meme.cpp */; };
 		218651B91E4B730400B0FA54 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 218651B71E4B730400B0FA54 /* IntNodeArray.cpp */; };
 		218651BF1E4B7DF600B0FA54 /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 218651BD1E4B7DF600B0FA54 /* StructureController.cpp */; };
 		21C395A81E71B4B500704669 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21C395A61E71B4B500704669 /* IntNode.cpp */; };
@@ -32,6 +33,8 @@
 		2137745E1E648D2200BD8CB6 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		213DE3031E6728D40083B2F1 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		213DE3041E672E700083B2F1 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
+		217A27391E76DAAE00FA7C8E /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
+		217A273A1E76DAAE00FA7C8E /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
 		218651B71E4B730400B0FA54 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		218651B81E4B730400B0FA54 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		218651BD1E4B7DF600B0FA54 /* StructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureController.cpp; path = Controller/StructureController.cpp; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				21EFB73F1E5C8DCC00DE9B1B /* Typed Data Sample */,
+				217A27391E76DAAE00FA7C8E /* Meme.cpp */,
+				217A273A1E76DAAE00FA7C8E /* Meme.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				218651BF1E4B7DF600B0FA54 /* StructureController.cpp in Sources */,
 				21C395A81E71B4B500704669 /* IntNode.cpp in Sources */,
 				21C395AA1E71B4D200704669 /* Runner.cpp in Sources */,
+				217A273B1E76DAAE00FA7C8E /* Meme.cpp in Sources */,
 				21F8A48A1E54B25400181BF1 /* Timer.cpp in Sources */,
 				218651B91E4B730400B0FA54 /* IntNodeArray.cpp in Sources */,
 			);

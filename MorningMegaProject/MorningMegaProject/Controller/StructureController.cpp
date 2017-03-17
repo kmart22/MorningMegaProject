@@ -108,3 +108,20 @@ void StructureController :: testListTiming()
     
     
 }
+
+void StructureController :: testMemeQueue()
+{
+    Meme firstMeme("toddler fist! with pinwheel");
+    Queue<Meme> memeQueue;
+    memeQueue.add(firstMeme);
+    Meme secondMeme;
+    seccondMeme.setDankness(8435);
+    memeQueue.enqueue(secondMeme);
+    
+    Meme teemp = memeQueue();
+    cout << "This should be 8435 and is" << temp.getDankness() << endl;
+    
+    
+}
+
+
