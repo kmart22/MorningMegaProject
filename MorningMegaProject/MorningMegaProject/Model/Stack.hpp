@@ -142,6 +142,10 @@ Type Stack<Type> :: pop()
     {
         update->setnextpointer(nullptr);
     }
+    else
+    {
+        this->setFront(nullptr);
+    }
     delete this->getEnd();
     
     this->setEnd(update);

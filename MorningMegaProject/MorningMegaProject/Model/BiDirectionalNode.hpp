@@ -41,7 +41,7 @@ BiDirectionalNode<Type> :: BiDirectionalNode() : Node<Type>()
 
 
 template <class Type>
-BiDirectionalNode<Type> :: BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next) : Node(data, next)
+BiDirectionalNode<Type> :: BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next) : Node<Type>(data, next)
 {
     this->nextPointer = next;
     this->previous = previous;
