@@ -183,5 +183,26 @@ Type List<Type> :: remove(int index)
     
 }
 
+template <class Type>
+bool List<Type> :: contains(Type findMe)
+{
+    bool isInList = false;
+    Node<Type> * current = front;
+    
+    for(int index = 0; index < size; index++)
+    {
+        if(current->getNodeData() == findMe)
+        {
+            
+            isInList = true;
+            return isInList;
+        }
+        current = current->getNodePointer();
+    }
+    
+    return isInList;
+}
+
+
 
 #endif /* List_h */

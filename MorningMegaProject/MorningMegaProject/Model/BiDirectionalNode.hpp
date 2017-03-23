@@ -60,13 +60,13 @@ BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getPreviousPointer()
 }
 
 template <class Type>
-BiDirectionalNode<Type> :: setNextPointer(BiDirectionalNode<Type> * next)
+void BiDirectionalNode<Type> :: setNextPointer(BiDirectionalNode<Type> * next)
 {
     this->nextPointer = next;
 }
 
 template <class Type>
-BiDirectionalNode<Type> :: setPreviousPointer(BiDirectionalNode<Type> * previous)
+void BiDirectionalNode<Type> :: setPreviousPointer(BiDirectionalNode<Type> * previous)
 {
     this->previousPointer = previous;
 }

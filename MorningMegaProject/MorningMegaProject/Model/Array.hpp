@@ -40,6 +40,8 @@ public:
     Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
     
+     int indexOf(Type itemToFind);
+    
 };
 
 //Implementation section
@@ -163,6 +165,25 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     }
 }
 
+template <class Type>
+int Array<Type> :: indexOf(Type findMe)
+{
+    int index = -1;
+    
+    Node<Type> * searchPointer = this->front;
+    
+    
+    for (int spot = 0; spot < this->getSize(); spot++)
+    {
+        if(findMe == searchPointer->getNodeData())
+        {
+            return spot;
+        }
+        searchPointer = searchPointer->getNextPointer();
+    }
+    
+    return index;
+}
 
 
 
