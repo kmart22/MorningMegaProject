@@ -31,5 +31,10 @@ public:
     void setDankness(int dank);
     void setHipsterQuotient(double hipsterQuotient);
     void setMainStream(bool mainstream);
+    
+    //Overloading the comparison operators to allow for sorting of Meme data
+    bool operator < (const Meme & compared);
+    bool operator > (const Meme & compared);
+    bool operator == (const Meme & compared);
 };
 #endif /* Meme_hpp */
