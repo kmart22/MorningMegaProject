@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>6</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>300</x>
+      <x>450</x>
       <y>0</y>
-      <w>174</w>
-      <h>132</h>
+      <w>261</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>Intnode
 --
@@ -30,10 +30,10 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>102</x>
+      <x>153</x>
       <y>0</y>
-      <w>162</w>
-      <h>102</h>
+      <w>243</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>IntNodeArray
 -
@@ -50,10 +50,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>108</x>
-      <y>156</y>
-      <w>144</w>
-      <h>108</h>
+      <x>162</x>
+      <y>234</y>
+      <w>216</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>Node&lt;Type&gt;
 -
@@ -66,10 +66,10 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>258</x>
-      <y>60</y>
-      <w>54</w>
-      <h>18</h>
+      <x>387</x>
+      <y>90</y>
+      <w>81</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
@@ -77,10 +77,10 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>150</y>
-      <w>288</w>
-      <h>168</h>
+      <x>459</x>
+      <y>225</y>
+      <w>432</w>
+      <h>252</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 --
@@ -105,10 +105,10 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>246</x>
-      <y>168</y>
-      <w>72</w>
-      <h>24</h>
+      <x>369</x>
+      <y>252</y>
+      <w>108</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m2=1..n
@@ -118,10 +118,10 @@ bg=black</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>348</y>
-      <w>276</w>
-      <h>186</h>
+      <x>459</x>
+      <y>522</y>
+      <w>414</w>
+      <h>279</h>
     </coordinates>
     <panel_attributes>Model :: List&lt;Type&gt;
 --
@@ -148,10 +148,10 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>204</x>
-      <y>258</y>
-      <w>228</w>
-      <h>102</h>
+      <x>306</x>
+      <y>387</y>
+      <w>342</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m2=0..n
@@ -161,10 +161,10 @@ bg=black</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>150</x>
-      <y>258</y>
-      <w>18</w>
-      <h>96</h>
+      <x>225</x>
+      <y>387</y>
+      <w>27</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
@@ -172,10 +172,10 @@ bg=black</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>96</x>
-      <y>342</y>
-      <w>186</w>
-      <h>150</h>
+      <x>144</x>
+      <y>513</y>
+      <w>279</w>
+      <h>225</h>
     </coordinates>
     <panel_attributes>BiDirectionalNode&lt;Type&gt;
 --
@@ -191,10 +191,10 @@ bg=light_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>288</x>
-      <y>558</y>
-      <w>114</w>
-      <h>18</h>
+      <x>432</x>
+      <y>837</y>
+      <w>171</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
@@ -203,9 +203,9 @@ bg=light_gray</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>534</y>
-      <w>294</w>
-      <h>180</h>
+      <y>801</y>
+      <w>441</w>
+      <h>270</h>
     </coordinates>
     <panel_attributes>DoublyLinkedList&lt;Type&gt;
 -
@@ -227,10 +227,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>558</y>
-      <w>270</w>
-      <h>144</h>
+      <x>585</x>
+      <y>837</y>
+      <w>405</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>Model :: Queue&lt;Type&gt;
 -
@@ -253,10 +253,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>942</x>
-      <y>786</y>
-      <w>264</w>
-      <h>102</h>
+      <x>1413</x>
+      <y>1179</y>
+      <w>396</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>Model :: CircularList&lt;Type&gt;
 -
@@ -269,10 +269,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>666</x>
-      <y>696</y>
-      <w>270</w>
-      <h>144</h>
+      <x>999</x>
+      <y>1044</y>
+      <w>405</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>Model :: Stack&lt;Type&gt;
 -
@@ -285,10 +285,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>288</x>
-      <y>702</y>
-      <w>666</w>
-      <h>120</h>
+      <x>432</x>
+      <y>1053</y>
+      <w>999</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0;110.0;40.0;110.0;180.0;1090.0;180.0</additional_attributes>
@@ -296,12 +296,126 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>288</x>
-      <y>624</y>
-      <w>390</w>
-      <h>96</h>
+      <x>432</x>
+      <y>936</y>
+      <w>585</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;20.0;90.0;40.0;110.0;100.0;140.0;140.0;630.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1017</x>
+      <y>720</y>
+      <w>405</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>BinarySearchTreeNode&lt;Type&gt;
+-
+- nodeData: Type(inherited)
+- rootPointer : TreeNode&lt;Type&gt; * 
+- leftChildPointer : BinarySearchTreeNode&lt;Type&gt; *
+- rightChildPointer : BinarySearchTreeNode&lt;Type&gt; *
+-
++ getRootPointer(): BinarySEarchTreeNode&lt;Type&gt; *
++ getLeftChildPointer() : BinarySearchTreeNode&lt;Type&gt; * 
++ getRightChildPointer() : BinarySearchTreeNode&lt;Type&gt; *
+
++ setRootChildPointer(BinarySearcchTreeNode&lt;Type&gt; *root) : void
++ setLeftChildPointer(BinarySearcchTreeNode&lt;Type&gt; *left) : void
++ setRightChildPointer(BinarySearcchTreeNode&lt;Type&gt; *right) : void
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1944</x>
+      <y>693</y>
+      <w>405</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>Model :: Tree&lt;Type&gt;
+-
+- size : int
+- height : int
+- complete : bool
+- balanced : bool
+-
++ getSize() : int
++ getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
+
++ setSize(int size) : void
++ setHeight(int height) : void
++ setComplete(bool complete) : void
++ setBalanced(bool balanced) : void
+
++ inOrderTraversal() : void
++ preOrderTraversal() : void
++ postOrderTraveral() : void
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1485</x>
+      <y>900</y>
+      <w>405</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>Model :: BinarySearchTreeNode&lt;Type&gt;
+-
+- rootPointer : TreeNode&lt;Type&gt; * 
+- size : int(inherited)
+- height : int(inherited)
+- complete : bool (inherited)
+- balanced : bool (inherited)
+-
++ BinarySearchTree() : constructor
++ ~BinarySearchTree() : destructor
+
++ getRoot() : BinarySearrchTreeNode&lt;Type&gt; *
++ setRoot(BinarySearchTreeNode&lt;Type&gt; *root) : void
+
++ calculateSize(BinarySearchTreeNode&lt;Type&gt;*) : int
+
++ inOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
++ preOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
++ postOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1413</x>
+      <y>792</y>
+      <w>144</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..n
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1764</x>
+      <y>783</y>
+      <w>198</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+
+bg=black</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;130.0</additional_attributes>
   </element>
 </diagram>
