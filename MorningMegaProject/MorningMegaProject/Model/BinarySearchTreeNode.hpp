@@ -21,6 +21,7 @@ private:
 public:
     BinarySearchTreeNode();
     BinarySearchTreeNode(Type data);
+    ~BinarySearchTreeNode();
     
     BinarySearchTreeNode<Type> * getRootPointer();
     BinarySearchTreeNode<Type> * getLeftChild()
@@ -33,7 +34,14 @@ public:
 };
 
 template <class Type>
-BinarySearchTreeNode :: BinarySearchTreeNode()
+BinarySearchTreeNode<Type> :: ~BinarySearchTreeNode()
+{
+    delete leftChild;
+    delete rightChild;
+}
+
+template <class Type>
+BinarySearchTreeNode :: BinarySearchTreeNode() : Node<Type>()
 {
     this->root = nullptr;
     this->leftChild = nullptr;

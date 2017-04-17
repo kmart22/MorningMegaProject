@@ -32,7 +32,7 @@ protected:
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
-    void removeNode(BinarySearchTreeNode<Type> * & removeMe);
+    void removeNode(BinarySearchTreeNode<Type> * removeMe);
     
 public:
     BinarySearchTree();
@@ -64,6 +64,11 @@ BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
     this->root = nullptr;
 }
 
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    delete root;
+}
 
 template <class Type>
 BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
@@ -309,7 +314,7 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: removeNode(binarySearchTreeNode<Type> * & removeMe)
+void BinarySearchTree<Type> :: removeNode(binarySearchTreeNode<Type> * removeMe)
 {
     
     BinarySearchTree<Type> * current;
@@ -396,6 +401,11 @@ void BinarySearchTree<Type> :: removeNode(binarySearchTreeNode<Type> * & removeM
         }
         
         delete current;
+    }
+    
+    if(removeMe == nullptr || removeMe->getRootPointer() == nullptr)
+    {
+        setRoot(removeMe);
     }
 
 
