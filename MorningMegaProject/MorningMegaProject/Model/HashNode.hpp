@@ -20,7 +20,7 @@ public:
     HashNode(Type data);
     
     Type getData();
-    long getKey();
+    long getKey() const;
     void setData();
 };
 
@@ -38,7 +38,7 @@ HashNode<Type> :: HashNode(Type data)
 }
 
 template <class Type>
-long HashNode<Type> :: getKey()
+long HashNode<Type> :: getKey() const
 {
     return this->key;
 }
