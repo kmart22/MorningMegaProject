@@ -20,7 +20,7 @@ private:
     long capacity;
     long size;
     double efficiencyPercentage;
-    Type * * hashTableStorage;
+    HashNode<Type> * * hashTableStorage;
     bool isPrime(long sampleNumber);
     void resize();
     long nextPrime(long current);
@@ -32,6 +32,33 @@ public:
     bool remove(Type data);
     void displayContents();
 };
+
+template <class Type>
+HashTable<Type> :: HashTable()
+{
+    this->capacity = 101;
+    this->efficiencyPercentage = .667;
+    this->size = 0;
+    this->hashTableStorage = HashNode<Type> * [cpacity];
+}
+
+template <class Type>
+HashTable<Type> :: ~HashTable()
+{
+    delete [] hashTableStorage;
+}
+
+template <class Type>
+int HashTable<Type> :: getNextPrime()
+{
+    int nextPrime = (this->capacity * 2) + 1;;
+    while(!isPrime(nextPrime))
+    {
+        nextPrime++;
+    }
+    
+    return nextPrime;
+}
 
 template <class Type>
 bool HashTable<Type> :: isPrime(long candidateNumber)

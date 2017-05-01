@@ -41,6 +41,7 @@
 		215AA6D31E9D2508000FCDAE /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Tree.hpp; path = Model/Tree.hpp; sourceTree = "<group>"; };
 		215AA6D41E9D2A1F000FCDAE /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTree.hpp; path = Model/BinarySearchTree.hpp; sourceTree = "<group>"; };
 		215CED091EB77A4E009D8620 /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashTable.hpp; path = Model/HashTable.hpp; sourceTree = "<group>"; };
+		215CED0A1EB784BF009D8620 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashNode.hpp; path = Model/HashNode.hpp; sourceTree = "<group>"; };
 		217A27391E76DAAE00FA7C8E /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
 		217A273A1E76DAAE00FA7C8E /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
 		218651B71E4B730400B0FA54 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 				215AA6D41E9D2A1F000FCDAE /* BinarySearchTree.hpp */,
 				210612191EA7B15A0056EFD9 /* AVLTree.hpp */,
 				215CED091EB77A4E009D8620 /* HashTable.hpp */,
+				215CED0A1EB784BF009D8620 /* HashNode.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
