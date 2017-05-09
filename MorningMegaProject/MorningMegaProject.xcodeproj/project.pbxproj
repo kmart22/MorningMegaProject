@@ -58,6 +58,7 @@
 		21C395A71E71B4B500704669 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
 		21C395A91E71B4D200704669 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
 		21D10C7E1E48D656008E8168 /* MorningMegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MorningMegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		21DA2F2A1EC1FCDD00014CF6 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = Model/Graph.hpp; sourceTree = "<group>"; };
 		21EFB7411E5CA3A000DE9B1B /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
 		21F8A4871E54AAF900181BF1 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		21F8A4881E54B25400181BF1 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 				210612191EA7B15A0056EFD9 /* AVLTree.hpp */,
 				215CED091EB77A4E009D8620 /* HashTable.hpp */,
 				215CED0A1EB784BF009D8620 /* HashNode.hpp */,
+				21DA2F2A1EC1FCDD00014CF6 /* Graph.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
